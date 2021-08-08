@@ -85,7 +85,7 @@ def locationHandler(evt) {
     def parsedEvent = parseDiscoveryMessage(description)
     parsedEvent << ["hub":hub]
 
-    if (parsedEvent?.ssdpTerm?.contains("schemas-upnp-org:device:Py_Device:")) {
+    if (parsedEvent?.ssdpTerm?.contains("schemas-upnp-org:device:PyDevice:")) {
         def devices = getDevices()
 
         if (!(devices."${parsedEvent.ssdpUSN.toString()}")) { //if it doesn't already exist

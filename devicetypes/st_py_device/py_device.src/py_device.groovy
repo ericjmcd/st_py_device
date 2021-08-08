@@ -44,7 +44,7 @@ def on() {
 def off() {
 	sendEvent(name: "switch", value: "off")
 }
-}
+
 
 // parse events into attributes
 def parse(String description) {
