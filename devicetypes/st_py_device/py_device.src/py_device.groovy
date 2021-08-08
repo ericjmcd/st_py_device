@@ -15,7 +15,7 @@
  */
 
 metadata {
-    definition (name: "ST Python Device", namespace: "st_py_device", author: "Richard L. Lynch") {
+    definition (name: "ST Python Device", namespace: "st_py_device", author: "Eric J McDonald") {
         capability "Switch"
         capability "Temperature Measurement"
         capability "Refresh"
